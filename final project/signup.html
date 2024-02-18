@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo" class="set">
+      <img src="logo.jpg" alt="">
+    </div>
+    <h2 class="set"><i>MUKARIM CLOTHING</i></h2>
+  </header>
+    <div >
+        <h2 id="pp">CREATE ACCOUNT</h2>
+    </div>
+    <div id="per">
+        <h3 >PERSONAL INFORMATION</h3>
+        <form id="personal" action="">
+            <div class="info">
+              <label for="firstname">
+                <span>First Name</span>
+              </label>
+            </div>
+            <div>
+              <input type="text" name="firstname" id="firstname" placeholder="ENTER FIRST NAME" required>
+            </div>  
+            <div class="info">
+              <label for="lastname">
+                <span>Last Name </span>
+              </label>
+            </div>
+            <div>
+              <input type="text" name="lastname" id="lastname" placeholder="ENTER LAST NAME" required>
+            </div>  
+            <div class="info">
+                <label for="birthdate">
+                    <span>Date of birth </span>
+                </label>
+              </div>
+              <div>
+                <input type="date" name="birthdate" id="birthdate" required>
+              </div>  
+            <div class="info">
+              <label for="phone">
+                <span>PHONE NUMBER </span>
+              </label>
+            </div>
+              <div>
+                <input type="number"  name="phone" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required/>
+              </div>
+            <div class="info">
+              <label for="email">
+                <span>EMAIL </span>
+              </label>
+            </div>
+             <div>
+              <input type="email"  name="email" id="email" placeholder="ENTER YOUR EMAIL" required/>
+             </div> 
+            <div class="info">
+              <label for="password">
+                <span>CREATE PASSWORD </span>
+              </label>
+            </div>
+             <div>
+              <input type="password"  name="password" id="password" placeholder="CREATE PASSWORD" required/>
+             </div> 
+            <div id="marital_status" class="info">
+                <label for="marital_status">
+                    <span>Marital Status</span>
+                </label>
+              </div>
+                <div>
+                  <select name="marital_status" id="status-select">
+                    <option value="" selected="selected"></option>
+                    <option value="">Married</option>
+                    <option value="">Single</option>
+                </select>
+                </div>  
+                <div id="button">
+                  <a href="./loginform.html"> <-- Back</a>
+            <button type="submit" id="submit" class="buttons">Create Account</button>
+            <button type="reset" id="reset" class="buttons">reset</button>
+          </div>
+          </form>
+    </div>
+    <footer>
+      <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+    </footer>
+</body>
+</html>

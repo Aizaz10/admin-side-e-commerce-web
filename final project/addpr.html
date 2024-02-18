@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2d08c;
+        }
+
+        header {
+            background-color: #8b5904;
+            color: #f2d08c;
+            padding: 1.1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #f2d08c;
+            color: #19003d;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+
+        section label {
+            display: flex;
+            font-size: 1.3rem;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            width: 68%;
+        }
+
+        section input {
+            width: 68%;
+            margin-left: 3%;
+            padding: 0.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            border-color: black;
+            margin-top: -3%;
+            margin-bottom: 1rem;
+        }
+
+        section form button {
+            background-color: #000000;
+            color: #fff;
+            padding: 4% 6%;
+            border: 1px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        section form button:hover {
+            background-color: white;
+            color: black;
+            transition-duration: 0.5s;
+        }
+
+        #product-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Product Management</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./addpr.html">Add Products</a></li>
+                <li><a href="./viewpr.html">View Products</a></li>
+                <li><a href="./admindashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>Add Products</h2>
+    </header>
+
+    <main>
+        <section>
+            <form id="add-product-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="category">Category:</label><br>
+                <input type="text" id="category" name="category" required><br>
+                <label for="price">Price:</label><br>
+                <input type="number" id="price" name="price" required><br>
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <section id="list">
+            <h2>Product List</h2>
+            <ul id="product-list"></ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+
+<footer>
+    <p> Copyright &copy; Mukarim Clothing. All rights are reserved.</p>
+</footer>
+</body>
+
+</html>
